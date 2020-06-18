@@ -6,6 +6,7 @@ package ar.edu.unju.fi.tracking.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,10 +16,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class RegistroTracking {
+	@Autowired
 	LocalDateTime fechaHora;
+	@Autowired
 	Vehiculo vehiculo;
+	@Autowired
 	List<Tripulante> tripulantes;
+	@Autowired
 	Localidad localidad;
+	@Autowired
 	String detalleLugarRegistro;
 	
 	public RegistroTracking() {

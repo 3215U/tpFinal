@@ -3,18 +3,28 @@
  */
 package ar.edu.unju.fi.tracking.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * @author grupo 6
  *
  */
 public class Vehiculo {
+	@Autowired
 	String patente;
+	@Autowired
 	String calor;
+	@Autowired
 	String titular;
+	@Autowired
 	String marca;
+	@Autowired
 	String modelo;
+	@Autowired
 	String tipo;
+	@Autowired
 	String numeroChasis;
+	@Autowired
 	String numeroMotor;
 	public Vehiculo() {
 		// TODO Auto-generated constructor stub

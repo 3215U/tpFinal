@@ -3,6 +3,7 @@
  */
 package ar.edu.unju.fi.tracking.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,10 +12,15 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class Usuario {
+	@Autowired
 	String nombreUsuario;
+	@Autowired
 	String password;
+	@Autowired
 	String nombreReal;
+	@Autowired
 	String apellidoReal;
+	@Autowired
 	String tipoUsuario;
 	
 	public Usuario() {
